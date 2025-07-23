@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - AR PERFECT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background: #111;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ffc8;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1c1c1c;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+    }
+
+    .contact-container h2 {
+      color: #00ffc8;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #00ffc8;
+      border: none;
+      padding: 15px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c6a2;
+    }
+
+    .social-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-buttons a {
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .social-buttons a.telegram {
+      background: #229ED9;
+    }
+
+    .social-buttons a:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contact AR PERFECT</h1>
+  <p>Reach us for Support, Training or Investment Queries</p>
+</header>
+
+<div class="contact-container">
+  <h2>Send us a message</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="social-buttons">
+    <a href="https://wa.me/9118162095" target="_blank">📱 WhatsApp Us</a>
+    <a class="telegram" href="https://t.me/ankuraja01" target="_blank">📢 Join Telegram</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 AR PERFECT | Founded by Ankit Vishwakarma | Phone: 9118162095</p>
+</footer>
+
+</body>
+</html>
