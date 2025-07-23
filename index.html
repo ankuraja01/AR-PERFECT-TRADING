@@ -10,81 +10,124 @@
       background: #0e0e0e;
       color: #f2f2f2;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       line-height: 1.6;
     }
+
     header, footer {
       text-align: center;
       padding: 20px 10px;
       background: #1a1a1a;
     }
+
     h1, h2 {
       color: #00ffcc;
     }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: #111;
-      padding: 10px 0;
-    }
-    nav a {
-      margin: 8px;
-      padding: 10px 18px;
-      background: #00ffcc;
-      color: #000;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: #00b3b3;
-    }
+
     section {
-      margin: 30px 15px;
+      margin: 30px 0;
       padding: 20px;
       background: #1f1f1f;
       border-radius: 10px;
     }
+
     .button {
       display: inline-block;
       margin: 10px;
-      padding: 12px 25px;
+      padding: 16px 35px;
       background: #00ffcc;
       color: #000;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-    }
-    .button.big {
       font-size: 18px;
-      padding: 16px 35px;
-      background: linear-gradient(135deg, #00ffcc, #00b3b3);
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #00ddaa;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: #121212;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #333;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #00ffcc;
       color: #000;
-      border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3);
-      transition: all 0.3s ease;
     }
-    .button.big:hover {
-      background: linear-gradient(135deg, #00b3b3, #00ffcc);
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 255, 204, 0.5);
-    }
+
     ul li {
       margin: 8px 0;
     }
+
     blockquote {
       font-style: italic;
       margin: 15px 0;
       border-left: 4px solid #00ffcc;
       padding-left: 15px;
     }
+
+    img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+      margin: 10px 0;
+    }
+
+    .founder-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .founder-section img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+    }
+
+    .founder-text {
+      max-width: 500px;
+    }
+
+    @media (max-width: 600px) {
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+      .founder-section {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Welcome to AR PERFECT</h1>
+    <img src="ankit.jpg" alt="Ankit Vishwakarma" class="profile" />
     <p>The Ultimate Destination for Smart Crypto and Stock Market Trading</p>
   </header>
 
@@ -105,6 +148,16 @@
     <section id="intro">
       <h2>Why AR PERFECT?</h2>
       <p><strong>AR PERFECT</strong> redefines trading. From stock to crypto, we offer powerful insights and expert strategies. Founded by <strong>Ankit Vishwakarma</strong>, a certified Data Scientist and elite market analyst, we help you invest smartly with confidence.</p>
+    </section>
+
+    <section id="founder">
+      <h2>👨‍💼 Meet the Founder</h2>
+      <div class="founder-section">
+        <img src="ankit.jpg" alt="Ankit Vishwakarma" />
+        <div class="founder-text">
+          <p><strong>Ankit Vishwakarma</strong> is a data scientist, technical analyst, and the visionary behind AR PERFECT. With a passion for helping others grow financially, he brings years of market experience, cutting-edge strategies, and personalized mentoring to make every investor confident and successful.</p>
+        </div>
+      </div>
     </section>
 
     <section id="services">
@@ -134,8 +187,8 @@
 
     <section id="cta">
       <h2>Ready to Start?</h2>
-      <a href="payments.html" class="button big">Buy Plan ✅</a>
-      <a href="join.html" class="button big">Join Now ✅</a>
+      <a href="payments.html" class="button">💳 Buy Plan</a>
+      <a href="join.html" class="button">🚀 Join Now</a>
     </section>
   </main>
 
@@ -143,5 +196,6 @@
     <p>Contact: <strong>+91 9118162095</strong> | Telegram: <strong>@ankuraja01</strong></p>
     <p>&copy; 2025 AR PERFECT</p>
   </footer>
+
 </body>
 </html>
